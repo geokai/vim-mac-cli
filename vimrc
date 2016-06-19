@@ -1,4 +1,4 @@
-" ~/.vimrc
+" ~/.vimrc -> ~/.vim/vimrc
 " Author: George Kaimakis <geomatus@mac.com>
 " -based on material from: Shawn Biddle, Steve Losh ---- 
 " Source: ~/.vim/...
@@ -26,6 +26,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_x = 0
 let g:syntastic_python_python_exec = 'python3'
+
+" NERDTree:----------------------------------------------------------------{{{1
+map <leader>tr <plug>NERDTreeTabsToggle<CR>
 
 " Show SYNTAX HIGHLIGHTING GROUP for word under cursor:--------------------{{{1
 "
