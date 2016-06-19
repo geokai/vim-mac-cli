@@ -57,9 +57,9 @@ set cursorline
 set highlight=si
 set ignorecase
 set smartcase
-set incsearch
 set showmatch
 set hlsearch
+set incsearch
 set gdefault
 set laststatus=2
 set backspace=2
