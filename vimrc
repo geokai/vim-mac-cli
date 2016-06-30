@@ -66,6 +66,8 @@ set incsearch
 set gdefault
 set laststatus=2
 set backspace=2
+set scrolloff=5
+set title
 
 highlight colorcolumn ctermbg=darkred
 highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
