@@ -146,8 +146,10 @@ nnoremap } }zz
 nnoremap { {zz
 
 " miscilanious mappings:
-" -all-caps & continue
+" -all-caps & continue in INSERT mode
 inoremap <c-u> <esc>viwUea
+" -all-caps & continue in NORMAL mode
+nnoremap <c-u> viwUea<ESC>
 " -add missing ";" to end of statements
 nnoremap <leader>; mqA;<ESC>`q
 " - search & highlighting
@@ -199,4 +201,4 @@ set backupskip=/tmp/*,/private/tmp/*"
 " 1}}}
 
 " End of .vimrc file:
-
+"
