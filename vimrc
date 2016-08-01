@@ -148,6 +148,8 @@ nnoremap { {zz
 " miscilanious mappings:
 " open vimrc in a split for a quick edit
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+" source the vimrc file
+nnoremap <leader>sv :source $MYVIMRC<cr>
 " -all-caps & continue in INSERT mode
 inoremap <c-u> <esc>viwUea
 " -all-caps & continue in NORMAL mode
