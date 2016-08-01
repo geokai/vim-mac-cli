@@ -65,6 +65,7 @@ set hlsearch
 set incsearch
 set gdefault
 set laststatus=2
+set statusline="sn"
 set backspace=2
 set scrolloff=5
 set title
