@@ -65,10 +65,10 @@ set hlsearch
 set incsearch
 set gdefault
 set laststatus=2
-set statusline="sn"
 set backspace=2
 set scrolloff=5
 set title
+set statusline="sn"
 
 highlight colorcolumn ctermbg=darkred
 highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
