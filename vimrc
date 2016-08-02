@@ -145,14 +145,14 @@ inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
 "inoremap <silent> <leader>un <ESC>:set number<CR><ESC>i
 
 " movement: centering, cursor to page
-nnoremap G Gzz
-nnoremap k kzz
-nnoremap j jzz
-nnoremap H Hzz
-nnoremap M Mzz
-nnoremap L Lzz
-nnoremap } }zz
-nnoremap { {zz
+" nnoremap G Gzz
+" nnoremap k kzz
+" nnoremap j jzz
+" nnoremap H Hzz
+" nnoremap M Mzz
+" nnoremap L Lzz
+" nnoremap } }zz
+" nnoremap { {zz
 
 " miscilanious mappings:
 " open vimrc in a split for a quick edit
