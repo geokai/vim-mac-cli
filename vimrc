@@ -69,6 +69,7 @@ set backspace=2
 set scrolloff=5
 set title
 set statusline="sn"
+set ruler
 
 highlight colorcolumn ctermbg=darkred
 highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
@@ -87,6 +88,7 @@ set colorcolumn=+1
 
 " remap the Leader key:
 let mapleader = ","
+let maplocalleader = "\\"
 
 " toggle wrapping:
 noremap <silent> <leader>wr <ESC>:set wrap!<CR><ESC>
@@ -113,6 +115,7 @@ vnoremap <down> <Nop>
 " quick pairs in INSERT mode
 inoremap <leader>' ''<ESC>i
 inoremap <leader>" ""<ESC>i
+inoremap <leader>* **<ESC>i
 inoremap <leader>( ()<ESC>i
 inoremap <leader>[ []<ESC>i
 inoremap <leader>t[ [  ]<ESC>hi
