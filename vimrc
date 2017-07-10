@@ -28,7 +28,7 @@ let g:syntastic_check_on_x = 0
 let g:syntastic_python_python_exec = 'python3'
 
 " NERDTree:----------------------------------------------------------------{{{1
-nnoremap <leader>tr <ESC>:NERDTreeTabsToggle<CR>
+nnoremap <leader>fs <ESC>:NERDTreeTabsToggle<CR>
 
 " Show SYNTAX HIGHLIGHTING GROUP for word under cursor:--------------------{{{1
 "
@@ -53,16 +53,9 @@ set showcmd
 set list
 set listchars=tab:›\ ,trail:–,extends:»,precedes:«,eol:¬
 set showbreak=↳\ 
-set wildmenu
 set hidden
 set visualbell
 set cursorline
-set highlight=si
-set ignorecase
-set smartcase
-set showmatch
-set hlsearch
-set incsearch
 set gdefault
 set laststatus=2
 set backspace=2
@@ -75,6 +68,17 @@ highlight colorcolumn ctermbg=darkred
 highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
 highlight nontext ctermfg=darkgrey ctermbg=none guifg=4a4a59
 highlight specialkey ctermfg=darkgrey ctermbg=none guifg=4a4a59
+
+" Finding_Autocomplete:----------------------------------------------------{{{1
+
+set path+=**
+set wildmenu
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set highlight=si
+set showmatch
 
 " Tabs, Spaces, Wrapping, Re-Mapping:--------------------------------------{{{1
 set tabstop=4
@@ -143,9 +147,6 @@ nnoremap <leader>p <ESC>:tabp<CR>
 " use relative numbering
 nnoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>
 inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
-"nnoremap <silent> <leader>un <ESC>:set number<CR><ESC>
-"inoremap <silent> <leader>u <ESC>:set relativenumber<CR><ESC>i
-"inoremap <silent> <leader>un <ESC>:set number<CR><ESC>i
 
 " movement: centering, cursor to page
 "nnoremap G Gzz
@@ -217,4 +218,3 @@ set backupskip=/tmp/*,/private/tmp/*"
 " 1}}}
 
 " End of .vimrc file:
-"
