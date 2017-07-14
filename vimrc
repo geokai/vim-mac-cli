@@ -69,7 +69,7 @@ highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
 highlight nontext ctermfg=darkgrey ctermbg=none guifg=4a4a59
 highlight specialkey ctermfg=darkgrey ctermbg=none guifg=4a4a59
 
-" Finding_Autocomplete:----------------------------------------------------{{{1
+" Finding & Autocomplete:----------------------------------------------------{{{1
 
 set path+=**
 set wildmenu
@@ -167,7 +167,7 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 inoremap <c-u> <esc>viwUea
 " -all-caps & continue in NORMAL mode
 nnoremap <c-u> viwUea<ESC>
-" -add missing ";" to end of statements
+" -add missing ';' to end of statements
 nnoremap <leader>; mqA;<ESC>`q
 " - search & highlighting
 nnoremap <silent> <leader>nh :nohl<cr>
@@ -175,7 +175,8 @@ nnoremap <silent> <leader>nh :nohl<cr>
 map <F2> <ESC>i#!/bin/bash<ESC>o<ESC>
 map <F3> <ESC>i#!/usr/local/bin/python3<ESC>o<ESC>
 map <F4> <ESC>o# This file was created on <ESC>:r!date "+\%x"<ESC>kJ0<ESC>
-map <F5> <ESC>o# Author: George Kaimakis<ESC>o<ESC>
+map <F5> <ESC>o# Author: George Kaimakis - https://github.com/geokai<ESC>o<ESC>
+
 " Folding:-----------------------------------------------------------------{{{1
 highlight Foldcolumn ctermfg=Darkgrey ctermbg=0 cterm=BOLD
 highlight Folded ctermfg=Darkgrey ctermbg=NONE cterm=none
