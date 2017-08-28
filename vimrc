@@ -28,7 +28,7 @@ let g:syntastic_check_on_x = 0
 let g:syntastic_python_python_exec = 'python3'
 
 " NERDTree:----------------------------------------------------------------{{{1
-nnoremap <leader>fs <ESC>:NERDTreeTabsToggle<CR>
+nnoremap <leader>ed <ESC>:NERDTreeTabsToggle<CR>
 
 " Show SYNTAX HIGHLIGHTING GROUP for word under cursor:--------------------{{{1
 "
