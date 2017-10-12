@@ -1,3 +1,4 @@
 .netrwhist
 colors/
-bundle/
+#bundle/
+safe_plugs/
