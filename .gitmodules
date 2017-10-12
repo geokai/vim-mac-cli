@@ -1,0 +1,42 @@
+[submodule "bundle/vim-easymotion.git"]
+	path = bundle/vim-easymotion.git
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "bundle/vim-sort-motion.git"]
+	path = bundle/vim-sort-motion.git
+	url = https://github.com/christoomey/vim-sort-motion.git
+[submodule "bundle/powerline.git"]
+	path = bundle/powerline.git
+	url = https://github.com/powerline/powerline.git
+[submodule "bundle/vim-titlecase.git"]
+	path = bundle/vim-titlecase.git
+	url = https://github.com/christoomey/vim-titlecase.git
+[submodule "bundle/syntastic.git"]
+	path = bundle/syntastic.git
+	url = https://github.com/vim-syntastic/syntastic.git
+[submodule "bundle/nerdtree.git"]
+	path = bundle/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/nerdtree-git-plugin.git"]
+	path = bundle/nerdtree-git-plugin.git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule "bundle/vim-nerdtree-tabs.git"]
+	path = bundle/vim-nerdtree-tabs.git
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "bundle/vim-commentary.git"]
+	path = bundle/vim-commentary.git
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "bundle/vim-fugitive.git"]
+	path = bundle/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/vim-surround.git"]
+	path = bundle/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-unimpaired.git"]
+	path = bundle/vim-unimpaired.git
+	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-repeat.git"]
+	path = bundle/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
+[submodule "bundle/supertab.git"]
+	path = bundle/supertab.git
+	url = https://github.com/ervandew/supertab.git
