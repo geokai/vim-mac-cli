@@ -12,7 +12,7 @@ great to have it up and running.
    1. there seems to be a conflict with my mapping for nerdtree - <leader>tr -
       haven't yet found a cause, however, opening and closing my vimrc file seems
       to 'force' the mapping to 'take'...odd(?)
-      <edit> also, I find, I have to resource my vimrc each time I open a file to force the mapping,
+      <edit> also, I find, I have to re-source my vimrc each time I open a file to force the mapping,
       (which is now <leader>ed)
    
    
