@@ -20,12 +20,64 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+" let g:syntastic_mode = "passive"
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': [] }
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_check_on_x = 0
 let g:syntastic_python_python_exec = 'python3'
+
+map <silent> <c-w>E :SyntasticCheck<CR> :lopen<CR>
+map <silent> <c-w>R :lclose<CR> :SyntasticReset<CR>
+
+" AIRLINE:-----------------------------------------------------------------{{{1
+" vim-airline settings:
+
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" old vim-powerline symbols
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+" let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+" let g:airline_symbols.linenr = '⭡'
+
+" unicode symbols
+" let g:airline_left_sep = '»'
+" let g:airline_left_sep = '▶'
+" let g:airline_right_sep = '«'
+" let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+" let g:airline_symbols.linenr = '␤'
+" let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+" let g:airline_symbols.paste = 'Þ'
+" let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+" airline symbols
+" let g:airline_left_sep = ''
+" let g:airline_left_alt_sep = ''
+" let g:airline_right_sep = ''
+" let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = ''
+" let g:airline_symbols.readonly = ''
+" let g:airline_symbols.linenr = ''
+
+let g:airline_theme = 'badwolf'
+
+" POWERLINE:---------------------------------------------------------------{{{1
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 " NERDTree:----------------------------------------------------------------{{{1
 nnoremap <leader>ed <ESC>:NERDTreeTabsToggle<CR>
@@ -48,8 +100,8 @@ set shortmess+=Iw
 set number
 colorscheme desert
 set background=dark
-set showmode
 set showcmd
+set noshowmode
 set list
 set listchars=tab:›\ ,trail:–,extends:»,precedes:«,eol:¬
 set showbreak=↳\ 
@@ -95,14 +147,14 @@ let mapleader = ","
 let maplocalleader = "\\"
 
 " toggle wrapping:
-noremap <silent> <leader>wr <ESC>:set wrap!<CR><ESC>
+nnoremap <silent> <leader>wr <ESC>:set wrap!<CR><ESC>
 
 " remap the arrow keys:
 " : in NORMAL mode
-noremap <up> ddkP
-noremap <left> <Nop>
-noremap <right> <Nop>
-noremap <down> ddp
+nnoremap <up> <Nop>
+nnoremap <left> <Nop>
+nnoremap <right> <Nop>
+nnoremap <down> <Nop>
 
 " : in INSERT mode
 inoremap <up> <Nop>
@@ -160,7 +212,7 @@ inoremap <silent> <leader>u <ESC>:set relativenumber!<CR><ESC>i
 
 " miscilanious mappings:
 " open vimrc in a split for a quick edit
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <leader>ev :tabnew $MYVIMRC<cr>
 " source the vimrc file
 nnoremap <leader>sv :source $MYVIMRC<cr>
 " -all-caps & continue in INSERT mode
@@ -168,7 +220,7 @@ inoremap <c-u> <esc>viwUea
 " -all-caps & continue in NORMAL mode
 nnoremap <c-u> viwUea<ESC>
 " -add missing ';' to end of statements
-nnoremap <leader>; mqA;<ESC>`q
+nnoremap <leader>: mqA:<ESC>`q
 " - search & highlighting
 nnoremap <silent> <leader>nh :nohl<cr>
 " -useful Fkey mappings:
@@ -205,11 +257,7 @@ set foldtext=MyFoldText()
 " Make vim able to edit crontab files w/o exploding!
 set backupskip=/tmp/*,/private/tmp/*"
 
-" Examples:----------------------------------------------------------------{{{1
-"void main (arg, arg) {
-"	printf ("Hello World");
-"}
-
+" Examples & Misc:---------------------------------------------------------{{{1
 
 " steve losh - learn<VIMSCRIPT>thw chapter 29...delete 2 lines, undo one at a
 " time
@@ -219,3 +267,4 @@ set backupskip=/tmp/*,/private/tmp/*"
 " 1}}}
 
 " End of .vimrc file:
+
