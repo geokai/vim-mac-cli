@@ -40,3 +40,9 @@
 [submodule "bundle/supertab.git"]
 	path = bundle/supertab.git
 	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/vim-airline.git"]
+	path = bundle/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-airline-themes.git"]
+	path = bundle/vim-airline-themes.git
+	url = https://github.com/vim-airline/vim-airline-themes.git
