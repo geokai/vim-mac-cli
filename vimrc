@@ -3,9 +3,6 @@
 " -based on material from: Shawn Biddle, Steve Losh ---- 
 " Source: ~/.vim/...
 
-
-" Work in progress...
-
 " PATHOGEN & Compatability:------------------------------------------------{{{1
 "
 "set shell=/bin/bash\ --login
@@ -43,27 +40,27 @@ if !exists('g:airline_symbols')
 endif
 
 " old vim-powerline symbols
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
+" let g:airline_left_sep = '⮀'
+" let g:airline_left_alt_sep = '⮁'
+" let g:airline_right_sep = '⮂'
+" let g:airline_right_alt_sep = '⮃'
 " let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
-" let g:airline_symbols.linenr = '⭡'
+" let g:airline_symbols.readonly = '⭤'
+" " let g:airline_symbols.linenr = '⭡'
 
 " unicode symbols
 " let g:airline_left_sep = '»'
 " let g:airline_left_sep = '▶'
 " let g:airline_right_sep = '«'
 " let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
+" let g:airline_symbols.linenr = '␊'
 " let g:airline_symbols.linenr = '␤'
 " let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
+" let g:airline_symbols.branch = '⎇'
+" let g:airline_symbols.paste = 'ρ'
 " let g:airline_symbols.paste = 'Þ'
 " let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
+" let g:airline_symbols.whitespace = 'Ξ'
 
 " airline symbols
 " let g:airline_left_sep = ''
@@ -77,7 +74,7 @@ let g:airline_symbols.whitespace = 'Ξ'
 let g:airline_theme = 'badwolf'
 
 " POWERLINE:---------------------------------------------------------------{{{1
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+" set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 
 " NERDTree:----------------------------------------------------------------{{{1
 nnoremap <leader>ed <ESC>:NERDTreeTabsToggle<CR>
@@ -267,4 +264,3 @@ set backupskip=/tmp/*,/private/tmp/*"
 " 1}}}
 
 " End of .vimrc file:
-

@@ -46,3 +46,6 @@
 [submodule "bundle/vim-airline-themes.git"]
 	path = bundle/vim-airline-themes.git
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "bundle/powerline-fonts.git"]
+	path = bundle/powerline-fonts.git
+	url = https://github.com/powerline/fonts.git
