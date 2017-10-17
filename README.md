@@ -1,5 +1,5 @@
 
-### My configurations for vim.
+### My configurations for vim on Mac OSX (10.8.5)
 
 These configs work best with Vim 7.4 (will soon be trying with Vim 8)
 
