@@ -103,7 +103,7 @@ set list
 set listchars=tab:›\ ,trail:–,extends:»,precedes:«,eol:¬
 set showbreak=↳\ 
 set hidden
-set visualbell
+" set visualbell
 set cursorline
 set gdefault
 set laststatus=2
@@ -115,8 +115,8 @@ set ruler
 
 highlight colorcolumn ctermbg=darkred
 highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
-highlight nontext ctermfg=darkgrey ctermbg=none guifg=4a4a59
-highlight specialkey ctermfg=darkgrey ctermbg=none guifg=4a4a59
+highlight nontext ctermfg=darkgrey ctermbg=none " guifg=4a4a59
+highlight specialkey ctermfg=darkgrey ctermbg=none " guifg=4a4a59
 
 " Finding & Autocomplete:----------------------------------------------------{{{1
 
