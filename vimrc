@@ -1,6 +1,6 @@
 " ~/.vimrc -> ~/.vim/vimrc
 " Author: George Kaimakis <geomatus@mac.com>
-" -based on material from: Shawn Biddle, Steve Losh ---- 
+" -based on material from: Shawn Biddle, Steve Losh...
 " Source: ~/.vim/...
 
 " PATHOGEN & Compatability:------------------------------------------------{{{1
@@ -34,6 +34,7 @@ map <silent> <c-w>R :lclose<CR> :SyntasticReset<CR>
 " vim-airline settings:
 
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -114,11 +115,11 @@ set statusline="sn"
 set ruler
 
 highlight colorcolumn ctermbg=darkred
-highlight cursorline ctermbg=none ctermfg=none cterm=BOLD
+highlight cursorline ctermbg=234 ctermfg=none cterm=none
 highlight nontext ctermfg=darkgrey ctermbg=none " guifg=4a4a59
 highlight specialkey ctermfg=darkgrey ctermbg=none " guifg=4a4a59
 
-" Finding & Autocomplete:----------------------------------------------------{{{1
+" Finding & Autocomplete:--------------------------------------------------{{{1
 
 set path+=**
 set wildmenu
